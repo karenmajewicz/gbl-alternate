@@ -1,0 +1,1132 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Steve Vandervalk">
+      
+      
+        <link rel="canonical" href="https://karenmajewicz.github.io/gbl-mkdocs/blog/2016-02-12-vecnet-digital-library-search-using-geoblacklight/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.14">
+    
+    
+      
+        <title>VecNET Digital Library redesign and geospatial search using GeoBlacklight - GBL MkDcos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-mkdocs.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-mkdocs.min.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-timeline.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-cards.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-gantt.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-spantable.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-was-the-problem" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GBL MkDcos" class="md-header__button md-logo" aria-label="GBL MkDcos" data-md-component="logo">
+      
+  <img src="../../images/geoblacklight-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GBL MkDcos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VecNET Digital Library redesign and geospatial search using GeoBlacklight
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../showcase/" class="md-tabs__link">
+      Showcase
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../connect/" class="md-tabs__link">
+      Connect
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../" class="md-tabs__link">
+      Blog
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../docs/overview/what_is_geoblacklight/" class="md-tabs__link">
+        Documentation
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GBL MkDcos" class="md-nav__button md-logo" aria-label="GBL MkDcos" data-md-component="logo">
+      
+  <img src="../../images/geoblacklight-logo.png" alt="logo">
+
+    </a>
+    GBL MkDcos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../showcase/" class="md-nav__link">
+        Showcase
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connect/" class="md-nav__link">
+        Connect
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Blog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/overview/what_is_geoblacklight/" class="md-nav__link">
+        What is GeoBlacklight
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/overview/contributing/" class="md-nav__link">
+        Contributing to GeoBlacklight
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/overview/metadata/" class="md-nav__link">
+        Metadata
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/overview/releases/" class="md-nav__link">
+        Releases
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/installation/geoblacklight_quick_start/" class="md-nav__link">
+        Quick Start
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/installation/getting_started_developers/" class="md-nav__link">
+        Getting Started - Developers Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+          Customization
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Customization
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/adding_leaflet_controls/" class="md-nav__link">
+        Adding Leaflet Controls
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/leaflet_retina_configuration/" class="md-nav__link">
+        Configuring Leaflet for Retina Displays
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/data_relations_widget/" class="md-nav__link">
+        Using the Data Relations Widget
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/index_maps/" class="md-nav__link">
+        Configuring Index Maps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/default_basemap/" class="md-nav__link">
+        Switching Default Basemap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/dynamic_basemap_switching/" class="md-nav__link">
+        Dynamic Basemap Switching
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/item_images/" class="md-nav__link">
+        Adding Support for Item Images
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/adding_mirador_viewer/" class="md-nav__link">
+        Adding Mirador IIIF Manifest Viewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/accessing_geopackages/" class="md-nav__link">
+        Accessing Raster and Vector Layers in GeoPackages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/adding_svg_icons/" class="md-nav__link">
+        Adding SVG Icons
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/rendering_html_from_description/" class="md-nav__link">
+        Rendering Line Breaks or HTML from the Description Field
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/customization/homepage_map_centroid_clusters/" class="md-nav__link">
+        Homepage Map Centroid Clusters
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_4" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+          Running in Production
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Running in Production
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/production/hardware_recommendations/" class="md-nav__link">
+        Hardware Recommendations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/production/implementation_recommendations/" class="md-nav__link">
+        Implementation Recommendations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/production/periodic_maintenance/" class="md-nav__link">
+        Periodic Maintenance
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_5" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+          Upgrading
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_5">
+          <span class="md-nav__icon md-icon"></span>
+          Upgrading
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/upgrading/Upgrading_to_version_4_0/" class="md-nav__link">
+        Upgrading to Version 4.0
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/upgrading/Upgrading_to_version_2_0/" class="md-nav__link">
+        Upgrading to Version 2.0
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+  <nav class="md-tags" >
+    
+      
+      
+        <span class="md-tag">geoblacklight, vecnet</span>
+      
+    
+  </nav>
+
+
+
+
+<p><img alt="dl-now.png" src="{{site.baseurl}}/images/dl-new-map-fiddled@splash@1600.png" /></p>
+<p>We got on the GeoBlacklight bus when we joined the VecNET project.  VecNET was a Gates Foundation initiative to simulate malaria vectors, transmission and interventions using parameters from current literature.  To provide the latest and greatest parameters, VecNET used a curated digital library with a web based search interface.</p>
+<hr />
+<h1 id="what-was-the-problem">What was the problem?</h1>
+<p>The search interface wasn't spatial, had some usability issues, and needed some design love.</p>
+<ul>
+<li>Spatial searching was limited to certain named locations; there was no map to visually define a search region, and we all love maps.</li>
+<li>Entries in the search results didn't show enough information, so users had to keep checking their search filters to understand what they were looking at.  AirBnB called this 'pogosticking'.</li>
+<li>Filters that could help to narrow down a search were present only in a side column, and underused.</li>
+</ul>
+<p><img alt="dl-old@small.png" src="{{site.baseurl}}/images/dl-old@small.png" /></p>
+<hr />
+<h1 id="drawing-board">Drawing board</h1>
+<p>With broad changes in mind, rough designs were pencilled up and debated around the office whiteboard.  Hopefully the designer in you enjoys these as much as we did.</p>
+<h5 id="map-and-fancy-notch-thing">Map and fancy notch thing</h5>
+<p>The notch made it into the final design, the floating panel and vignette shading didn't.
+<img alt="map notch" src="{{site.baseurl}}/images/sketches/map-notch@small.png" /></p>
+<h5 id="simple-facet-design">Simple facet design</h5>
+<p>We decided early to move the facet selection into a single column with the results.</p>
+<p><img alt="filters" src="{{site.baseurl}}/images/sketches/facets@small.png" /></p>
+<h5 id="ui-with-map-and-facets">UI with map and facets</h5>
+<p>The single search/results column let us plan a nice clean map display.</p>
+<p><img alt="filters" src="{{site.baseurl}}/images/sketches/ui@small.png" /></p>
+<hr />
+<h1 id="look-at-that">Look at that</h1>
+<p>After the early work of original thought, we checked out related works. It turns out the original VecNET search bore a striking resemblance to the old AirBnB search!  AirBnB had recently done a redesign to fix what they have concluded were large design and usability issues.</p>
+<p><img alt="airbnb-old@small.png" src="{{site.baseurl}}/images/airbnb-old@small.png" /></p>
+<p><img alt="airbnb-new@small.png" src="{{site.baseurl}}/images/airbnb-new@small.png" /></p>
+<p>We could learn from their experience and benefit from work done by a talented team.
+Our final proposal was iteratively formed with feedback from VecNET librarians based around simple UX principles:</p>
+<ul>
+<li>Big searchable map<ul>
+<li>A well designed map can clearly display information about where papers were from; users can easily find data from a specific location</li>
+</ul>
+</li>
+<li>Intuitive top to bottom page flow<ul>
+<li>Natural progression means less 'pogosticking'</li>
+</ul>
+</li>
+<li>Simple search filters<ul>
+<li>Use ordinary words instead of obscure terms</li>
+</ul>
+</li>
+</ul>
+<p><img alt="vecnet-proposal@small.png" src="{{site.baseurl}}/images/vecnet-proposal@small.png" /></p>
+<hr />
+<h1 id="enter-geoblacklight">Enter GeoBlacklight</h1>
+<p>The stack at VecNET was inherited from a prototype Ruby on Rails app with an old Solr and Fedora backend.  For a spatial search we would need to integrate spatial values of records with the existing dataset.  On the front end we wanted to use Leaflet and GeoJSON and uses Rail's API ability to serve data to a modern Javascript powered frontend with the UI goodness that users enjoy.</p>
+<p>Just as the Backbone.js structure was being laid down, we noticed a new project with strong ideas about user friendly geospatial discovery.</p>
+<p><img alt="geoblacklight@small.png" src="{{site.baseurl}}/images/geoblacklight@small.png" /></p>
+<p>The GeoBlacklight project was being developed in the open and was based on the <a href="http://projectblacklight.org/">Blacklight project</a> which was a basis of the legacy app.  In addition backwards compatibility was emphasised which is a high virtue when choosing an upstream.
+Normally you don't get excited about Rails apps at version 0.4 but with institutions like Stanford, MIT and Princeton contributing to an active development community that was encouraging new users – it was as close as software gets to alluring.</p>
+<h1 id="customising-geoblacklight">Customising GeoBlacklight</h1>
+<p>Adding VecNET-specific functionality to the existing GeoBlacklight platform can with a bit of a learning curve but thankfully was <a href="http://geoblacklight.org/tutorials.html">well documented</a> with an <a href="https://groups.google.com/forum/#!forum/geoblacklight-working-group">active Google groups community</a>.
+Our VecNET specific additions included:</p>
+<ul>
+<li>displaying several locations associated with a single 'record' on a map</li>
+<li>search by map area and bounding box</li>
+<li>point clustering for when density was too high</li>
+</ul>
+<p>Other customisations to fit our design idea included:</p>
+<ul>
+<li>Unified search page with AJAX search form and results</li>
+<li>Shiny rounded CSS3 corners (because <a href="http://www.folklore.org/StoryView.py?story=Round_Rects_Are_Everywhere.txt">Steve Jobs amiright</a>...)</li>
+<li>Friendly animation and transitions between results and map marker</li>
+<li>Enhanced metadata on the results page for better selection</li>
+<li><a href="https://en.wikipedia.org/wiki/Progressive_enhancement">Progressive enhancement</a> with fallback to rendered HTML for SEO.</li>
+</ul>
+<p>We implemented the changes with vanilla Javascript and Rails templates to minimise the learning curve for future maintenance.</p>
+<h1 id="enhancing-metadata-with-micro-standards">Enhancing metadata with Micro Standards</h1>
+<p>Geoblacklight uses an geospatial schema extended from prior standards, <a href="https://github.com/geoblacklight/geoblacklight-schema">documented here</a>, and <a href="http://journal.code4lib.org/articles/9710">explained best here</a>(imho).  It encodes the metadata and geospatial characteristics of the stored records.  The Ruby on Rails server in GeoBlacklight will embed the data into rendered HTML with a <a href="http://schema.org/">schema.org</a> style which looks the 'div' element in the HTML below:</p>
+<p>{% highlight html %}</p>
+<div class="document " itemscope="" itemtype="http://schema.org/Dataset">
+<div class="documentHeader row" data-layer-id="urn:arrowsmith.mit.edu:MIT.000932529" data-bbox="-83.5 41.5 -79.0 43.0">
+{% endhighlight %}
+
+The value, `data-bbox`, for instance, will be be used by [Leaflet.js](http://leafletjs.com/) to manipulate the map or generate a marker.  It is a simplified explanation but you get the idea.
+
+We want to make searching easy and efficient by displaying the most relevant data. Using the mechanism above, we can extend our digital library to show users important details such as journal, date, author.  The image below is an example of those micro schema values turned into nice UI elements for users.
+
+![schema-example.png]({{site.baseurl}}/images/schema-example.png)
+
+
+# Part II?
+
+There was plenty more fun in customising GeoBlacklight but that is all for now.  
+If you have any feedback, we would love to hear from you. We promise to take criticism well :) Promise.
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+    
+  </body>
+</html>
