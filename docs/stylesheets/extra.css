@@ -46,11 +46,22 @@
 }
 
 /* 
-  increase default font sizep, li{
-  margin: 0 0 0.75em; 
-  font-size: 1.1em; 
-  }
+ [data-md-color-scheme="default"] {
+   --md-primary-fg-color: #2b6ca1;
+   --md-accent-fg-color: #09c36c;
+ }
+
+ [data-md-color-scheme="slate"] {
+   --md-primary-fg-color: #09c36c;
+   --md-accent-fg-color: #2b6ca1;
+ }
  */
+
+.md-typeset h2{
+      color: inherit;
+      font-weight: bold;
+      font-size: 1.3em;
+}
   
 .center {
       text-align: center;

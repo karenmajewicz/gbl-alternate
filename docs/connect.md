@@ -24,7 +24,7 @@ hide:
   url: https://z.umn.edu/gbl-meetings
   
 - title: Participate in a Community Sprint
-  content:  The GeoBlacklight Community collaborates on a 2-week sprint every Winter and Summer.
+  content:  The GeoBlacklight Community collaborates on a 2-week sprint every Winter and Summer. Participation in the sprint is open to anyone interested in working on GeoBlacklight. While similar to a traditional code sprint, the GeoBlacklight Community Sprints also include tackling issues around documentation, metadata, community governance, and more. 
   url: 
   
 - title: Discuss on GitHub
