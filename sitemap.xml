@@ -21,122 +21,392 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/tags/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2015/01/introducing-geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2015/04/deploying-geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2015/11/open-in-cartodb-now-in-geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016/01/geoblacklight-at-nyu-a-blog-series-by-andrew-battista/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016/02/vecnet-digital-library-redesign-and-geospatial-search-using-geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016/08/geoblacklight-version-10-released/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016/09/big-ten-academic-alliance-geoportal-launches/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2017/08/summer-code-concludes-and-geoblacklight-version-160-released/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2018/03/geoblacklight-winter-code-2018--new-release-18/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2018/08/2018-08-10-summer-code-sprint-version-1_9/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2019/02/2019-02-01-winter-code-sprint-version-2/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2020/09/geoblacklight-30-is-here/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2021/02/announcing-the-geoblacklight-community-winter-2021-sprint/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2021/09/new-releases-after-the-geoblacklight-community-summer-2021-sprint/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2022/02/announcing-the-geoblacklight-community-winter-2022-sprint/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2022/03/geoblacklight-community-sprint-recap-winter-2022/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2022/08/announcing-the-geoblacklight-community-summer-2022-sprint/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2022/09/the-wait-is-over---geoblacklight-40-is-here/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2023/03/winter-sprint-2023/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2015/2015-01-15-introducing-geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2015/2015-04-10-deploying-geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2015/2015-11-17-open-in-cartodb/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2016/2015-04-10-deploying-geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2016/2016-01-23-using-packer-to-create-a-development-virtual-machine/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2016/2016-01-25-geoblacklight-at-nyu-a-blog-series/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2016/2016-02-12-vecnet-digital-library-search-using-geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2016/2016-08-01-geoblacklight-1-released/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2016/2016-09-07-big-ten-academic-alliance-geoportal-launches/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2017/2017-08-24--summer-code-sprint-version1.6.0-released/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2018/2018-03-01--winter-code-sprint-version1.8/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2018/2018-08-10-summer-code-sprint-version-1_9/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2019/2019-02-01-winter-code-sprint-version-2/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2020/2020-09-15-summer-sprint-2020/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2021/2021-02-10-announcing-winter-sprint-2021/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2021/2021-09-07-summer-sprint-2021/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2022/2022-02-03-winter-sprint-2022/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2022/2022-03-07-winter-sprint-recap/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2022/2022-08-01-summer-sprint-2022-announcement/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2022/2022-09-20-geoblacklight-4/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blogplugin/2023/2023-03-08-winter-sprint/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/accessing_geopackages/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/adding_leaflet_controls/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/adding_mirador_viewer/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/adding_svg_icons/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/data_relations_widget/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/default_basemap/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/dynamic_basemap_switching/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/homepage_map_centroid_clusters/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/index_maps/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/item_images/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/leaflet_retina_configuration/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/customization/rendering_html_from_description/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/installation/geoblacklight_quick_start/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/installation/getting_started_developers/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/overview/contributing/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/overview/metadata/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/overview/releases/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/overview/what_is_geoblacklight/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/production/hardware_recommendations/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/production/implementation_recommendations/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/production/periodic_maintenance/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/tutorials/tutorials/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/upgrading/Upgrading_to_version_2_0/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/docs/upgrading/Upgrading_to_version_4_0/</loc>
+         <lastmod>2023-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://karenmajewicz.github.io/gbl-mkdocs/showcase/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/tags/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2023/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2015-01-15-introducing-geoblacklight/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2022/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2015-04-10-deploying-geoblacklight/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2021/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2015-04-10-deploying-geoblacklight/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2020/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2015-11-17-open-in-cartodb/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2019/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016-01-23-using-packer-to-create-a-development-virtual-machine/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2018/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016-01-25-geoblacklight-at-nyu-a-blog-series/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2017/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016-02-12-vecnet-digital-library-search-using-geoblacklight/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2016/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016-08-01-geoblacklight-1-released/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/archive/2015/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2016-09-07-big-ten-academic-alliance-geoportal-launches/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2017-08-24--summer-code-sprint-version1.6.0-released/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2018-03-01--winter-code-sprint-version1.8/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2018-08-10-summer-code-sprint-version-1_9/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2019-02-01-winter-code-sprint-version-2/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2020-09-15-summer-sprint-2020/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2021-02-10-announcing-winter-sprint-2021/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2021-09-07-summer-sprint-2021/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2022-02-03-winter-sprint-2022/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2022-03-07-winter-sprint-recap/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2022-08-01-summer-sprint-2022-announcement/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2022-09-20-geoblacklight-4/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/2023-03-08-winter-sprint/</loc>
-         <lastmod>2023-06-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://karenmajewicz.github.io/gbl-mkdocs/tags/</loc>
+         <loc>https://karenmajewicz.github.io/gbl-mkdocs/blog/page/2/</loc>
          <lastmod>2023-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
