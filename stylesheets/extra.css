@@ -1,19 +1,10 @@
 /* set height of top menu */
-/* 
-@media (min-width: 76.25em) {
-  .md-header__button.md-logo {
-    position: absolute;
-    top: 0;
-    margin-left: -3rem;
-    margin-top: -.4rem;
-  }
- */
+
   .md-header .md-grid {
     padding-left: 4.8rem;
   }
   .md-header__button.md-logo img {
     height: 2rem  !important; /* <-- see comment below */
-/*     margin-right: 2rem; */
     display: block;
     padding-right: .75em;
   }
@@ -28,7 +19,6 @@
  }
 
 
-
 /* full width */
 .md-grid {
   max-width: 90%; 
@@ -38,10 +28,14 @@
     color: inherit;
 }
 
-
 .md-typeset h2{
       color: #000;
       font-weight: bold;
+      font-size: 1.3em;
+}
+
+.md-typeset h3{
+      color: #24574F;
       font-size: 1.3em;
 }
 
@@ -112,8 +106,8 @@ label[for="__drawer"] {
  
 /* (B) GRID CELL */
 div.cell {
-  border: 1px solid #e0e0e0;
-  padding: 10px;
+/*   border: .5px solid #e0e0e0; */
+  padding: 5px;
 }
 
 /* (C) SPAN MULTIPLE COLUMNS */
@@ -122,3 +116,7 @@ div.cell {
   grid-column-end: 2;
 }
 
+li::marker {
+    color: #24574F;
+    content: "📍";  
+}
