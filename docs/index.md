@@ -11,12 +11,24 @@ hide:
 
 ![](images/gbl-multipage.png)
 
-::cards:: cols=2
+<h2 style="text-align: center;">How can the Geoblacklight Community  help you?</h2>
 
-- title: Easy to customize
-  content: GeoBlacklight uses SASS and Bootstrap to enable adopters to easily customize their installation. 
-  
-- title: Built for longevity
-  content: Modularized software projects that enhance each other. Test coverage and documentation is a priority.
-   
-::/cards::
+<div id="grid-line">
+	
+<div class="cell">
+<h3 style="text-align: center;">Participating institutions</h3>
+<ul>
+<li>GeoBlacklight provides a customizable platform for delivering geospatial information seamlessly to end users</li>
+<li>Participants can connect to other contributors through our active <a href = "connect">communication channels</a> and learn best practices for software and metadata implementation.</li>
+</ul>
+</div>
+
+<div class="cell">
+<h3 style="text-align: center;">End users</h3>
+<ul>
+<li>GeoBlacklight makes geospatial resources accessible to all users regardless of expertise with user-friendly searches through a map interface, keyword searches, and faceted browsing.</li>
+<li>GeoBlacklight provides easy download and export options for reusing geospatial resources in a wide variety of academic ventures.</li>
+</ul>
+</div>
+
+</div>

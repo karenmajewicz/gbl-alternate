@@ -1,21 +1,19 @@
 /* set height of top menu */
-/* 
-@media (min-width: 76.25em) {
-  .md-header__button.md-logo {
-    position: absolute;
-    top: 0;
-    margin-left: -3rem;
-    margin-top: -.4rem;
-  }
- */
+
   .md-header .md-grid {
     padding-left: 4.8rem;
   }
+  
   .md-header__button.md-logo img {
-    height: 2rem  !important; /* <-- see comment below */
-/*     margin-right: 2rem; */
-    display: block;
+    height: 2rem  !important; <-- see comment below    display: block;
     padding-right: .75em;
+  }
+  
+/* increase header size and fonts */
+
+ .md-header__topic  {
+  font-size: 1.5em; 
+  line-height: 2em;
   }
   
   .md-header__topic {
@@ -26,56 +24,33 @@
  display: block;
   float: right;
  }
+ 
+ .md-tabs__link  {
+      font-size: 1.75em; 
+  }
 
-
-
-/* full width */
+/* set width of site */
+/* 
 .md-grid {
   max-width: 90%; 
 }
+ */
 
 .md-nav__item--section > .md-nav__link[for] {
     color: inherit;
 }
-
-
-.md-typeset h2{
-      color: #000;
-      font-weight: bold;
-      font-size: 1.3em;
-}
-
-/* 
- [data-md-color-scheme="default"] {
-   --md-primary-fg-color: #2b6ca1;
-   --md-accent-fg-color: #09c36c;
- }
-
- [data-md-color-scheme="slate"] {
-   --md-primary-fg-color: #09c36c;
-   --md-accent-fg-color: #2b6ca1;
- }
- */
 
 .md-typeset h2{
       color: inherit;
       font-weight: bold;
       font-size: 1.3em;
 }
-  
-.center {
-      text-align: center;
+
+.md-typeset h3{
+      color: #24574F;
+      font-size: 1.3em;
 }
 
-
-increase header size and fonts.md-header__topic  {
-  font-size: 1.5em; 
-  line-height: 2em;
-  }
-  
-.md-tabs__link  {
-      font-size: 1.75em; 
-  }
 
 /* Hide main nav title */
 label[for="__drawer"] {
@@ -83,19 +58,12 @@ label[for="__drawer"] {
 }
 
 
-/* style the left hand nav section */
+/* style the left hand nav  */
 
-/* 
 .md-nav--primary {
-      background-color: #ADD8E6;
-      width: 100%;
-      padding: 2em;
-      border: .1em;
-      border-style: dotted;
-      border-color: black;
-      }
- */
+      border-right: .1em  solid #24574F;
 
+      }
 
  
 /* (C) RESPONSIVE - 1 COLUMN ON SMALL SCREENS */
@@ -112,8 +80,8 @@ label[for="__drawer"] {
  
 /* (B) GRID CELL */
 div.cell {
-  border: 1px solid #e0e0e0;
-  padding: 10px;
+/*   border: .5px solid #e0e0e0; */
+  padding: 5px;
 }
 
 /* (C) SPAN MULTIPLE COLUMNS */

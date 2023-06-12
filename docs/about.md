@@ -7,26 +7,7 @@ GeoBlacklight is an open-source [Ruby on Rails](https://rubyonrails.org/) softwa
 
 Discovery services and metadata are key challenges for organizations who provide geospatial data. GeoBlacklight connects expertise from the digital library and geospatial communities to provide a better experience for users to find geospatial data.
 
-The GeoBlacklight community helps *participating institutions* by:
-
-* Providing a customizable platform for delivering geospatial information seamlessly to end users
-* Recommending best practices for software and metadata implementation and updates
-* Providing access to collaborative, standardized metadata through [OpenGeoMetadata](https://opengeometadata.org)
-* Connecting them to other contributors through our active [communication channels](https://geoblacklight.org/connect.html)
-* Preserving a robust knowledge base on this website, and in our [GitHub repository](https://github.com/geoblacklight/geoblacklight)
-
-The GeoBlacklight community helps *end users* by:
-
-* Creating a central repository for digital geospatial resources of all kinds
-* Making geospatial resources accessible to all users regardless of expertise
-* Enabling user-friendly searches through a map interface, keyword search, or a combination of the two
-* Ensuring consistent and high-quality metadata that can be federated across institutions
-* Providing easy download and export options, along with clear rights and licensing information, for reusing geospatial resources in a wide variety of academic ventures
-
-**************************
-
-Our Community
--------------
+## Our Community
 
 Participants in the GeoBlacklight community come from a variety of professional and intellectual backgrounds (including librarians, software developers, metadata specialists, applied researchers, and others), but we share a common interest in making reliable and high-quality geospatial data easily accessible to members of the research community and the broader public. Many of us work in libraries and other cultural heritage institutions that deploy (or are planning to deploy) GeoBlacklight instances to disseminate and publicize their spatial data collections.
 
@@ -34,15 +15,15 @@ Anyone interested in spatial data infrastructures, libraries, GIS, maps, data cu
 
 Visit the [Connect](https://geoblacklight.org/connect.html) page to join our online community.
 
-#### Events
+### Events
 
 - **Every month:** [Zoom meetings](https://z.umn.edu/gbl-meetings) to share project updates and to discuss topical issues.
 
-- **2x per year:** [Community Sprints](/community-sprints.html) are similar to a traditional code sprint but also incorporate activities around documentation, metadata, governance, and more.
+- **2x per year:** Community Sprints are similar to a traditional code sprint but also incorporate activities around documentation, metadata, governance, and more.
 
 - **Annually:** [Geo4LibCamp](https://geo4libcamp.org/) is a hands-on meeting to bring together those building repository services for geospatial data. The main focus is to share best-practices, solve common problems, and address technical issues with integrating geospatial data into a repository and associated services.
 
-#### Roles
+### Roles
 
 - **Community Coordinator** (Karen Majewicz)
 
@@ -53,26 +34,24 @@ Visit the [Connect](https://geoblacklight.org/connect.html) page to join our onl
 
 	- responsible for responding to [Code of Conduct](https://github.com/geoblacklight/geoblacklight/blob/main/CODE_OF_CONDUCT.md) reports.
 
-**************************
 
-Our Development Practices
--------------------------
+## Our Development Practices
+
 
 - **Open source model**: GeoBlacklight is an open source software project licensed using the Apache License, version 2.0. Our development practices have been codified in a [contribution guide](https://github.com/geoblacklight/geoblacklight/blob/main/CONTRIBUTING.md) since December 2015 and we use [semantic versioning](https://semver.org/) to release the Ruby on Rails engine to RubyGems. Changes are made to the codebase using pull requests to the GitHub source code repository.
 
 - **Connected frameworks**: Many of the development practices for the GeoBlacklight project have foundations in other open source software communities. A strategic design decision was made to build on existing pools of expertise in organizations with [Blacklight](https://projectblacklight.org/) and [Samvera](https://samvera.org/) rather than build a completely custom system. The project also relies heavily on configuration and extensibility as useful patterns for adopters making customizations.
 
-- **Decision-making**: Much of the technical decision-making is driven from the original [GeoBlacklight Concept Design document](https://geoblacklight.org/documents/GeoBlacklight%20Concept%20Design%20v0.3.3.pdf) and has been further distilled into our [GeoBlacklight Technical Values](#geoblacklight-technical-values). Major and minor decisions are made using informal consensus.
+- **Decision-making**: Much of the technical decision-making is driven from the original [GeoBlacklight Concept Design document](https://geoblacklight.org/pdfs/GeoBlacklight%20Concept%20Design%20v0.3.3.pdf) and has been further distilled into our [GeoBlacklight Technical Values](#geoblacklight-technical-values). Major and minor decisions are made using informal consensus.
 
 - **Testing**: GeoBlacklight has Continuous Integration Testing, and tests are expected to be written with code contributions to the project. The project also implements both Ruby and JavaScript style guides to ensure a stylistically similar codebase.
 
 - **Funding**: There is no funding model for GeoBlacklight, and most development comes through volunteered or assigned time from contributing organizations. Some projects have received grants or dedicated funds to build their GeoBlacklight applications. Our community also includes private vendors and independent freelancers that have contributed to the project through contracted work.
 
 
-**************************
 
-Application Features
---------------------
+
+## Application Features
 
 - **Technical Stack**: GeoBlacklight is a Ruby on Rails engine designed as a plugin for the popular open source discovery framework, [Blacklight](https://projectblacklight.org/). GeoBlacklight has direct software dependencies to Blacklight and Ruby on Rails. It also requires searchable metadata through the Apache Solr project. For production uses, GeoBlacklight installations often require a SQL database such as MySQL, MariaDB, or PostgreSQL. 
 
@@ -88,12 +67,11 @@ Application Features
 
 	- includes elements for external links, such as downloads, web services, or supplemental metadata
 
-	- interoperable for the [OpenGeoMetadata](https://github.com/OpenGeoMetadata) federated metadata sharing community
+	- interoperable for the [OpenGeoMetadata](https://opengeometadata.org) federated metadata sharing community
 
-**************************
 
-GeoBlacklight Technical Values
-------------------------------
+## GeoBlacklight Technical Values
+
 
 - Our core focus is **geospatial discovery**. This focus initially was limited to discretely catalogued data objects, but has expanded over time to include a wider range of information sources.
 
@@ -109,46 +87,37 @@ GeoBlacklight Technical Values
 
 - Excellent geospatial analysis and mapping tools already exist. Rather than build new ones in GeoBlacklight, we focus on **integration with these existing tools**.
 
-**************************
 
 ## Connected Projects
 
 The GeoBlacklight software stack consists of several open source software projects which work together to enable a better discovery experience. 
 
+::cards::
 
-### GeoBlacklight Sidecar images
+- title: GeoBlacklight 
+  content: GeoBlacklight is the main discovery interface for geospatial data. It is developed as a Ruby on Rails engine and built on top of the popular open-source discovery interface Blacklight.
+  
+- title: Dockerized GeoBlacklight  
+  content: Developers from Harvard University have created a built instance of GeoBlacklight in a Docker context. This will allow new and existing users to test and develop an instance of GeoBlacklight within the Docker environment.
+  url: https://github.com/harvard-lts/GeoBlacklightDockerized
 
-This GeoBlacklight plugin captures remote images from geographic web services and saves them locally. It borrows the concept of a [SolrDocumentSidecar](https://github.com/projectblacklight/spotlight/blob/master/app/models/spotlight/solr_document_sidecar.rb) from [Spotlight](https://github.com/projectblacklight/spotlight), to have an ActiveRecord-based "sidecar" to match each non-AR SolrDocument. This allows us to use [ActiveStorage](https://github.com/rails/rails/tree/main/activestorage) to attach images to our solr documents.
+- title: OpenGeoMetadata
+  content: GeoBlacklight is built to use the OpenGeoMetadata schema, which is designed for GIS resource discovery and focuses mainly on discovery use cases. Text search, faceted search and refinement, and spatial search and relevancy are among the primary features that the schema enables.
+  url: https://opengeometadata.org
 
-### GeoBlacklight Docker
-
-GeoBlacklight-Docker enables quick installation of the software.
-
-Available at [https://github.com/geoblacklight/geoblacklight-docker](https://github.com/geoblacklight/geoblacklight-docker)
-
-### Geomonitor
-
-An easy way to monitor geowebservices
-
-GeoMonitor is a [Ruby on Rails](https://github.com/rails/rails) application used to monitor geowebservices. It was built out of the premise that users who are looking for and find data should actually be able to access and use it.
-
-The application is setup to periodically monitor WMS web services and log data on a layers availability.
-
-Grab the source code on [Github](https://github.com/geoblacklight/geo_monitor)
-
-### OpenGeoMetadata
-
-GeoBlacklight is built to use the OpenGeoMetadata schema, which is designed for GIS resource discovery and focuses mainly on discovery use cases. Text search, faceted search and refinement, and spatial search and relevancy are among the primary features that the schema enables.
-
-The schema is documented on the [OpenGeoMetadata website.](https://opengeometadata.org)
-
-The schema is also discussed in detail in a *code4lib* journal article here: [A Metadata Schema for Geospatial Resource Discovery Use Cases](http://journal.code4lib.org/articles/9710)
-
-### OpenIndexMaps
-
-A community format for sharing index maps in GeoBlacklight
-
-[OpenIndexMaps](https://openindexmaps.org/) is a repository that hosts community-produced GeoJSON index maps that facilitate discovery within GeoBlacklight portals.
+- title: OpenIndexMaps
+  content: A community format for sharing index maps in GeoBlacklight and a repository that hosts community-produced GeoJSON index maps that facilitate discovery within GeoBlacklight portals.
+  url: https://openindexmaps.org/
+  
+- title: GeoBlacklight Sidecar images
+  content: This GeoBlacklight plugin captures remote images from geographic web services and saves them locally. 
+  url: https://github.com/geoblacklight/geoblacklight_sidecar_images
+  
+- title: Geomonitor
+  content: GeoMonitor is a Ruby on Rails application used to monitor geowebservices. It was built out of the premise that users who are looking for and find data should actually be able to access and use it. The application is setup to periodically monitor WMS web services and log data on a layers availability.
+  url: https://github.com/geoblacklight/geo_monitor
+  
+::/cards::
 
 
 ## GeoBlacklight Contributors
