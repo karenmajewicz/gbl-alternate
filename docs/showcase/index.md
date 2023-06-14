@@ -4,6 +4,8 @@ hide:
   - navigation
 ---
 
+# GeoBlacklight Project Showcase
+
 ::cards:: image-bg cols=3
 
 - title: Big Ten Academic Alliance Geoportal
@@ -72,5 +74,8 @@ hide:
 
 ::/cards::
 
+## Add to the Showcase
+
+If your institution or organization has adopted GeoBlacklight and you would like to add your instance to the project page, [see the instructions to contribute](submit.md).
 
 
